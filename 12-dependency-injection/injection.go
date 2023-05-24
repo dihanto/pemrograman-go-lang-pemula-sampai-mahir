@@ -1,3 +1,6 @@
+//go:build wireinject
+// +build wireinject
+
 package main
 
 import (
@@ -33,5 +36,4 @@ func InitializedServer() *http.Server {
 		NewServer,
 	)
 	return nil
-
 }
